@@ -38,7 +38,7 @@
         </div>
       </div>
     </nav>
-
+    
     <!-- Page Content -->
     <div class="container">
 
@@ -49,6 +49,30 @@
 	      </h1>
       </div>
       
+      <?php 
+
+        //Tipos de variáveis e depuração/debugar/retorno/casting
+
+        ///Inteiro 
+
+         $variavel1 = 1;
+
+         //Ponto Flutuante
+         $variavel2 = 1.37;
+
+         //String
+         $variavel3 = "1,55";
+
+
+         //Concatenação
+         $exemplo = $variavel1. ' espaço '. $variavel2;
+
+         //Cast
+         $var = str_replace(",", ".", $variavel3);
+         $teste = (float) $var;
+
+
+      ?>
       <div class="row">
        
                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
