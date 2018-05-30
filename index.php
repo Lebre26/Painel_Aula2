@@ -74,8 +74,17 @@
 
       ?>
       <div class="row">
+
+      <?php
        
-               <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          //Array
+       $precos = array(150.55, 200.88, 320.66, 480.77);
+       $condicao = array('aluguel', 'venda', 'aluguel', 'venda');
+       //Laço de Repetição para renderizar os imóveis
+       for ($i=0; $i < count($precos) ; $i++) { 
+        
+       ?>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
@@ -86,10 +95,14 @@
               
               <span class="badge badge-success">Venda</span><br/>
              
-              <button type="button" class="btn btn-primary">R$ 150,55</button>
+              <button type="button" class="btn btn-primary">R$ <?php echo str_replace(".", ",", $precos[$i]) ?></button>
             </div>
           </div>
         </div>
+      
+      <?php
+        }
+      ?>
       
            
             </div>
