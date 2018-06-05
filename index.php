@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <title>Painel Administrativo - Aula 2</title>
+    <title>Painel Administrativo - Aula 3</title>
   </head>
   <body>
     <!-- Navigation -->
@@ -71,15 +71,24 @@
          $var = str_replace(",", ".", $variavel3);
          $teste = (float) $var;
 
+         //Escopo de variáveis/funções/variáveis globais
+
+         //Estrutura de condição
+
+         //HTTP Request e Response
+
+       
 
       ?>
+      
       <div class="row">
 
       <?php
        
-          //Array
+       //Array
        $precos = array(150.55, 200.88, 320.66, 480.77);
-       $condicao = array('aluguel', 'venda', 'aluguel', 'venda');
+      
+
        //Laço de Repetição para renderizar os imóveis
        for ($i=0; $i < count($precos) ; $i++) { 
         
